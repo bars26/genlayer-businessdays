@@ -1,0 +1,761 @@
+{
+  "network": "studio",
+  "contract": "0xbdcb82CDd1725F22Aa3afc447cf638aD265b908C",
+  "importer": "0x99f92701Bf6B7E0899F019A895c570E939d7752D",
+  "log": [
+    {
+      "who": "importer",
+      "call": "import_year(\"DE\", 2026)",
+      "value": "0",
+      "hash": "0x94a4f7bac3837627342ad8c8fcb1167966c0c41ce72a951d1393acb85d557187",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "AGREED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"DE\", 2027)",
+      "value": "0",
+      "hash": "0x863c21ed69b77f93fd4932e24b42ef9b3ca4e19e185841f230795d07b335b65d",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "AGREED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"FR\", 2026)",
+      "value": "0",
+      "hash": "0xc65efc731ed6143a945888e4a8f1a8ac708acb2795acf625d4ce986f2cec5aae",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "AGREED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"ES\", 2026)",
+      "value": "0",
+      "hash": "0x26086361a27660891eae07b9d628f2f715bc7236d539debfba182f54b9ed2c57",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "AGREED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"PL\", 2026)",
+      "value": "0",
+      "hash": "0xb57bc6b20b1549c2eb30e187c181accb329537313e3d91cb79d4bc838b1a8271",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "AGREED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"PT\", 2026)",
+      "value": "0",
+      "hash": "0x645a0e0c4f6f5cd979bc1d9e3fd54a4913cdf8127758ceb887dce05ec023b3e7",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "AGREED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"NL\", 2026)",
+      "value": "0",
+      "hash": "0x6533dd741e63ba7f52186fde70f70c4b9f39bb1387217d3f97172af319201dec",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "DISPUTED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"IT\", 2026)",
+      "value": "0",
+      "hash": "0xb3f3ce2441be609446274bf0b128b45e1b7a83a1dba7b08b65dd523fb658324c",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "DISPUTED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"IE\", 2027)",
+      "value": "0",
+      "hash": "0xdfa8f73147d433b04878d2f7296f4a47192935cd2f13da9385be86b200ff3b2e",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "DISPUTED"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"US\", 2026)",
+      "value": "0",
+      "hash": "0x6deb0ce0cea88cead9e602f1050d48772d7091fc2507b6a13cc776c2ab39aadd",
+      "status": "ACCEPTED",
+      "exec": "ERROR",
+      "refused": "OpenHolidays lists no public holidays for US-2026: the country is not covered by both calendars"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"DE\", 2026)",
+      "value": "0",
+      "hash": "0x98e986c14b1c4fd4addbb3302e2df140b6456a5a8b84ee863376f8d651fce649",
+      "status": "ACCEPTED",
+      "exec": "ERROR",
+      "refused": "DE-2026 was imported at 2026-11-23 13:13:02 UTC; a year is read again after a day"
+    },
+    {
+      "who": "importer",
+      "call": "import_year(\"DE\", 2035)",
+      "value": "0",
+      "hash": "0xda44032ffb3300592f62bba688f05ba72038adb15a008588c9de6a8516d65a89",
+      "status": "ACCEPTED",
+      "exec": "ERROR",
+      "refused": "year must be from 2021 to 2028"
+    }
+  ],
+  "queries": [
+    {
+      "fn": "is_business_day",
+      "args": [
+        "DE",
+        "2026-12-24"
+      ],
+      "answer": "yes"
+    },
+    {
+      "fn": "is_business_day",
+      "args": [
+        "DE",
+        "2026-12-25"
+      ],
+      "answer": "no"
+    },
+    {
+      "fn": "is_business_day",
+      "args": [
+        "FR",
+        "2026-07-14"
+      ],
+      "answer": "no"
+    },
+    {
+      "fn": "is_business_day",
+      "args": [
+        "NL",
+        "2026-04-03"
+      ],
+      "answer": "unknown"
+    },
+    {
+      "fn": "is_business_day",
+      "args": [
+        "IE",
+        "2027-06-07"
+      ],
+      "answer": "unknown"
+    },
+    {
+      "fn": "add_business_days",
+      "args": [
+        "DE",
+        "2026-12-23",
+        3
+      ],
+      "answer": "2026-12-29"
+    },
+    {
+      "fn": "add_business_days",
+      "args": [
+        "DE",
+        "2026-12-30",
+        2
+      ],
+      "answer": "2027-01-04"
+    },
+    {
+      "fn": "add_business_days",
+      "args": [
+        "FR",
+        "2026-05-07",
+        2
+      ],
+      "answer": "2026-05-12"
+    },
+    {
+      "fn": "add_business_days",
+      "args": [
+        "NL",
+        "2026-04-01",
+        5
+      ],
+      "answer": ""
+    },
+    {
+      "fn": "business_days_between",
+      "args": [
+        "DE",
+        "2026-01-01",
+        "2027-01-01"
+      ],
+      "answer": 254
+    },
+    {
+      "fn": "business_days_between",
+      "args": [
+        "ES",
+        "2026-12-01",
+        "2027-01-01"
+      ],
+      "answer": 21
+    },
+    {
+      "fn": "business_days_between",
+      "args": [
+        "IT",
+        "2026-06-01",
+        "2026-07-01"
+      ],
+      "answer": -1
+    }
+  ],
+  "years": {
+    "DE-2026": {
+      "country": "DE",
+      "digest": "204e31854e6aec1cb0851155a8f7b4f338ae1ddc813ed708c9b716ba60849360",
+      "imported_at": "2026-11-23T13:13:02",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-04-03",
+        "2026-04-06",
+        "2026-05-01",
+        "2026-05-14",
+        "2026-05-25",
+        "2026-10-03",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "nager_only": [],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-04-03": "Good Friday",
+        "2026-04-06": "Easter Monday",
+        "2026-05-01": "Labour Day",
+        "2026-05-14": "Ascension Day",
+        "2026-05-25": "Whit Monday",
+        "2026-10-03": "German Unity Day",
+        "2026-12-25": "Christmas Day",
+        "2026-12-26": "St. Stephen's Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-04-03",
+        "2026-04-06",
+        "2026-05-01",
+        "2026-05-14",
+        "2026-05-25",
+        "2026-10-03",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "openholidays_only": [],
+      "status": "AGREED",
+      "year": 2026
+    },
+    "DE-2027": {
+      "country": "DE",
+      "digest": "754ad0bb1d8d830ed3b431e1ebde657992ca793fbe08d96157fb30cd847c2c3c",
+      "imported_at": "2026-11-23T13:13:23",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2027-01-01",
+        "2027-03-26",
+        "2027-03-29",
+        "2027-05-01",
+        "2027-05-06",
+        "2027-05-17",
+        "2027-10-03",
+        "2027-12-25",
+        "2027-12-26"
+      ],
+      "nager_only": [],
+      "names": {
+        "2027-01-01": "New Year's Day",
+        "2027-03-26": "Good Friday",
+        "2027-03-29": "Easter Monday",
+        "2027-05-01": "Labour Day",
+        "2027-05-06": "Ascension Day",
+        "2027-05-17": "Whit Monday",
+        "2027-10-03": "German Unity Day",
+        "2027-12-25": "Christmas Day",
+        "2027-12-26": "St. Stephen's Day"
+      },
+      "openholidays": [
+        "2027-01-01",
+        "2027-03-26",
+        "2027-03-29",
+        "2027-05-01",
+        "2027-05-06",
+        "2027-05-17",
+        "2027-10-03",
+        "2027-12-25",
+        "2027-12-26"
+      ],
+      "openholidays_only": [],
+      "status": "AGREED",
+      "year": 2027
+    },
+    "FR-2026": {
+      "country": "FR",
+      "digest": "eb419efa249abc4d44e3801eeada69cad56cb71043bc8e147d538166b9e33fb0",
+      "imported_at": "2026-11-23T13:13:39",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-04-06",
+        "2026-05-01",
+        "2026-05-08",
+        "2026-05-14",
+        "2026-05-25",
+        "2026-07-14",
+        "2026-08-15",
+        "2026-11-01",
+        "2026-11-11",
+        "2026-12-25"
+      ],
+      "nager_only": [],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-04-06": "Easter Monday",
+        "2026-05-01": "Labour Day",
+        "2026-05-08": "Victory in Europe Day",
+        "2026-05-14": "Ascension Day",
+        "2026-05-25": "Whit Monday",
+        "2026-07-14": "Bastille Day",
+        "2026-08-15": "Assumption Day",
+        "2026-11-01": "All Saints' Day",
+        "2026-11-11": "Armistice Day",
+        "2026-12-25": "Christmas Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-04-06",
+        "2026-05-01",
+        "2026-05-08",
+        "2026-05-14",
+        "2026-05-25",
+        "2026-07-14",
+        "2026-08-15",
+        "2026-11-01",
+        "2026-11-11",
+        "2026-12-25"
+      ],
+      "openholidays_only": [],
+      "status": "AGREED",
+      "year": 2026
+    },
+    "ES-2026": {
+      "country": "ES",
+      "digest": "ed4de428998a572892c1e5d3eab2ba0a664acc1de9f1ee10c9c47cb1820fc554",
+      "imported_at": "2026-11-23T13:13:54",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-01-06",
+        "2026-04-03",
+        "2026-05-01",
+        "2026-08-15",
+        "2026-10-12",
+        "2026-11-01",
+        "2026-12-06",
+        "2026-12-08",
+        "2026-12-25"
+      ],
+      "nager_only": [],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-01-06": "Epiphany",
+        "2026-04-03": "Good Friday",
+        "2026-05-01": "Labour Day",
+        "2026-08-15": "Assumption",
+        "2026-10-12": "National Day of Spain",
+        "2026-11-01": "All Saints Day",
+        "2026-12-06": "Constitution Day",
+        "2026-12-08": "Immaculate Conception",
+        "2026-12-25": "Christmas Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-01-06",
+        "2026-04-03",
+        "2026-05-01",
+        "2026-08-15",
+        "2026-10-12",
+        "2026-11-01",
+        "2026-12-06",
+        "2026-12-08",
+        "2026-12-25"
+      ],
+      "openholidays_only": [],
+      "status": "AGREED",
+      "year": 2026
+    },
+    "PL-2026": {
+      "country": "PL",
+      "digest": "875f3a8337e3f2cff48510ca4252db350fd3510688a8ece45748f7a70ebed334",
+      "imported_at": "2026-11-23T13:14:16",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-01-06",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-24",
+        "2026-06-04",
+        "2026-08-15",
+        "2026-11-01",
+        "2026-11-11",
+        "2026-12-24",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "nager_only": [],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-01-06": "Epiphany",
+        "2026-04-05": "Easter Sunday",
+        "2026-04-06": "Easter Monday",
+        "2026-05-01": "May Day",
+        "2026-05-03": "Constitution Day",
+        "2026-05-24": "Pentecost",
+        "2026-06-04": "Corpus Christi",
+        "2026-08-15": "Assumption Day",
+        "2026-11-01": "All Saints' Day",
+        "2026-11-11": "Independence Day",
+        "2026-12-24": "Christmas Eve",
+        "2026-12-25": "Christmas Day",
+        "2026-12-26": "St. Stephen's Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-01-06",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-24",
+        "2026-06-04",
+        "2026-08-15",
+        "2026-11-01",
+        "2026-11-11",
+        "2026-12-24",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "openholidays_only": [],
+      "status": "AGREED",
+      "year": 2026
+    },
+    "PT-2026": {
+      "country": "PT",
+      "digest": "97bd1fb490c9e7df97b801898ba0d9c8115dedf53f6624f3347dd1644fab96cd",
+      "imported_at": "2026-11-23T13:14:31",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-04-03",
+        "2026-04-05",
+        "2026-04-25",
+        "2026-05-01",
+        "2026-06-04",
+        "2026-06-10",
+        "2026-08-15",
+        "2026-10-05",
+        "2026-11-01",
+        "2026-12-01",
+        "2026-12-08",
+        "2026-12-25"
+      ],
+      "nager_only": [],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-04-03": "Good Friday",
+        "2026-04-05": "Easter Sunday",
+        "2026-04-25": "Freedom Day",
+        "2026-05-01": "Labour Day",
+        "2026-06-04": "Corpus Christi",
+        "2026-06-10": "National Day",
+        "2026-08-15": "Assumption Day",
+        "2026-10-05": "Republic Day",
+        "2026-11-01": "All Saints Day",
+        "2026-12-01": "Restoration of Independence",
+        "2026-12-08": "Immaculate Conception",
+        "2026-12-25": "Christmas Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-04-03",
+        "2026-04-05",
+        "2026-04-25",
+        "2026-05-01",
+        "2026-06-04",
+        "2026-06-10",
+        "2026-08-15",
+        "2026-10-05",
+        "2026-11-01",
+        "2026-12-01",
+        "2026-12-08",
+        "2026-12-25"
+      ],
+      "openholidays_only": [],
+      "status": "AGREED",
+      "year": 2026
+    },
+    "NL-2026": {
+      "country": "NL",
+      "digest": "d0159e7ec76ed3a98d4cd793cb5e3a8cf251a3c93c99cf633456eb3ae0766418",
+      "imported_at": "2026-11-23T13:14:46",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-04-27",
+        "2026-05-14",
+        "2026-05-24",
+        "2026-05-25",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "nager_only": [],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-04-03": "Good Friday",
+        "2026-04-05": "Easter Sunday",
+        "2026-04-06": "Easter Monday",
+        "2026-04-27": "King's Day",
+        "2026-05-05": "Liberation Day",
+        "2026-05-14": "Ascension Day",
+        "2026-05-24": "Pentecost",
+        "2026-05-25": "Whit Monday",
+        "2026-12-25": "Christmas Day",
+        "2026-12-26": "St. Stephen's Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-04-03",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-04-27",
+        "2026-05-05",
+        "2026-05-14",
+        "2026-05-24",
+        "2026-05-25",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "openholidays_only": [
+        "2026-04-03",
+        "2026-05-05"
+      ],
+      "status": "DISPUTED",
+      "year": 2026
+    },
+    "IT-2026": {
+      "country": "IT",
+      "digest": "a13aff041254ab5485326707949917e9599dcae6346395f504dd2fc6197dcd50",
+      "imported_at": "2026-11-23T13:15:02",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2026-01-01",
+        "2026-01-06",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-04-25",
+        "2026-05-01",
+        "2026-06-02",
+        "2026-08-15",
+        "2026-10-04",
+        "2026-11-01",
+        "2026-12-08",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "nager_only": [
+        "2026-04-05",
+        "2026-10-04"
+      ],
+      "names": {
+        "2026-01-01": "New Year's Day",
+        "2026-01-06": "Epiphany",
+        "2026-04-05": "Easter Sunday",
+        "2026-04-06": "Easter Monday",
+        "2026-04-25": "Liberation Day",
+        "2026-05-01": "International Workers Day",
+        "2026-06-02": "Republic Day",
+        "2026-08-15": "Assumption Day",
+        "2026-10-04": "St. Francis of Assisi's Day",
+        "2026-11-01": "All Saints Day",
+        "2026-12-08": "Immaculate Conception",
+        "2026-12-25": "Christmas Day",
+        "2026-12-26": "St. Stephen's Day"
+      },
+      "openholidays": [
+        "2026-01-01",
+        "2026-01-06",
+        "2026-04-06",
+        "2026-04-25",
+        "2026-05-01",
+        "2026-06-02",
+        "2026-08-15",
+        "2026-11-01",
+        "2026-12-08",
+        "2026-12-25",
+        "2026-12-26"
+      ],
+      "openholidays_only": [],
+      "status": "DISPUTED",
+      "year": 2026
+    },
+    "IE-2027": {
+      "country": "IE",
+      "digest": "641618ad412654dd012bfc9c00ed082f4f2bf60facc7215d09afd51f1cd2fc7a",
+      "imported_at": "2026-11-23T13:15:17",
+      "imported_by": "0x99f92701bf6b7e0899f019a895c570e939d7752d",
+      "nager": [
+        "2027-01-01",
+        "2027-02-01",
+        "2027-03-17",
+        "2027-03-29",
+        "2027-05-03",
+        "2027-06-07",
+        "2027-08-02",
+        "2027-10-25",
+        "2027-12-25",
+        "2027-12-26"
+      ],
+      "nager_only": [
+        "2027-06-07"
+      ],
+      "names": {
+        "2027-01-01": "New Year's Day",
+        "2027-02-01": "Saint Brigid's Day",
+        "2027-03-17": "Saint Patrick's Day",
+        "2027-03-29": "Easter Monday",
+        "2027-05-03": "May Day",
+        "2027-06-04": "June Holiday",
+        "2027-06-07": "June Holiday",
+        "2027-08-02": "August Holiday",
+        "2027-10-25": "October Holiday",
+        "2027-12-25": "Christmas Day",
+        "2027-12-26": "St. Stephen's Day"
+      },
+      "openholidays": [
+        "2027-01-01",
+        "2027-02-01",
+        "2027-03-17",
+        "2027-03-29",
+        "2027-05-03",
+        "2027-06-04",
+        "2027-08-02",
+        "2027-10-25",
+        "2027-12-25",
+        "2027-12-26"
+      ],
+      "openholidays_only": [
+        "2027-06-04"
+      ],
+      "status": "DISPUTED",
+      "year": 2027
+    }
+  },
+  "list": [
+    {
+      "holidays": 9,
+      "imported_at": "2026-11-23T13:13:02",
+      "key": "DE-2026",
+      "nager_only": [],
+      "openholidays_only": [],
+      "status": "AGREED"
+    },
+    {
+      "holidays": 9,
+      "imported_at": "2026-11-23T13:13:23",
+      "key": "DE-2027",
+      "nager_only": [],
+      "openholidays_only": [],
+      "status": "AGREED"
+    },
+    {
+      "holidays": 11,
+      "imported_at": "2026-11-23T13:13:39",
+      "key": "FR-2026",
+      "nager_only": [],
+      "openholidays_only": [],
+      "status": "AGREED"
+    },
+    {
+      "holidays": 10,
+      "imported_at": "2026-11-23T13:13:54",
+      "key": "ES-2026",
+      "nager_only": [],
+      "openholidays_only": [],
+      "status": "AGREED"
+    },
+    {
+      "holidays": 14,
+      "imported_at": "2026-11-23T13:14:16",
+      "key": "PL-2026",
+      "nager_only": [],
+      "openholidays_only": [],
+      "status": "AGREED"
+    },
+    {
+      "holidays": 13,
+      "imported_at": "2026-11-23T13:14:31",
+      "key": "PT-2026",
+      "nager_only": [],
+      "openholidays_only": [],
+      "status": "AGREED"
+    },
+    {
+      "holidays": null,
+      "imported_at": "2026-11-23T13:14:46",
+      "key": "NL-2026",
+      "nager_only": [],
+      "openholidays_only": [
+        "2026-04-03",
+        "2026-05-05"
+      ],
+      "status": "DISPUTED"
+    },
+    {
+      "holidays": null,
+      "imported_at": "2026-11-23T13:15:02",
+      "key": "IT-2026",
+      "nager_only": [
+        "2026-04-05",
+        "2026-10-04"
+      ],
+      "openholidays_only": [],
+      "status": "DISPUTED"
+    },
+    {
+      "holidays": null,
+      "imported_at": "2026-11-23T13:15:17",
+      "key": "IE-2027",
+      "nager_only": [
+        "2027-06-07"
+      ],
+      "openholidays_only": [
+        "2027-06-04"
+      ],
+      "status": "DISPUTED"
+    }
+  ],
+  "stats": {
+    "years": 9,
+    "imports": 9
+  }
+}
